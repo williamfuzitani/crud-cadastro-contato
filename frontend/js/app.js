@@ -1,5 +1,6 @@
-angular.module('app', [])
-.controller('TabelaCtrl', function($scope, $http) {
+var app = angular.module('app', []);
+
+app.controller('TabelaCtrl', function($scope, $http) {
 
     $scope.contatos = [];
 
@@ -13,14 +14,6 @@ angular.module('app', [])
         console.log(response);
     });
 
-    function ListContatos($scope) {
-        $scope.buscarListaContatos = function() {
-            $http.get('http://localhost:8080/pessoa').then(function(response) {
-                $scope.contatos = response.data;
-            })
-        }
-    }
-
     $scope.saveUser = function() {
         $http({
             method: 'POST',
@@ -31,14 +24,16 @@ angular.module('app', [])
         }, function error(response) {
             console.log(response);
         });
+        $scope.contatos.push(this.pessoa);
         $scope.pessoa = null;
     }
 
-    $scope.deleteUser = function() {
+    $scope.deleteUser = function(id) {
         $http({
             method: 'DELETE',
-            url: 'http://localhost:8080/pessoa/' + this.pessoa.id
+            url: 'http://localhost:8080/pessoa/' + id
         });
+        $scope.contatos.pop(this.pessoa.id);
     }
 
     $scope.editUser = function() {
