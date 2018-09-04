@@ -6,9 +6,9 @@
 - O código font suba no github ou outro repositório qualquer.
 - Enviar os prints que demonstrem o funcionamento da aplicação.
 
-![Tela de cadastro] (img/tela-cadastro-01.png)
-![Adiciona contato] (img/tela-cadastro-02)
-![Lista contato] (img/tela-cadastro-03)
-![Lista vários contatos] (img/tela-cadastro-04)
-![Lista após deletar contatos] (img/tela-cadastro-05)
-![Editar contato] (img/tela-cadastro-06)
+![Tela de cadastro] (https://github.com/williamfuzitani/testeCadastroContato/blob/master/img/tela-cadastro-01.png)
+![Adiciona contato] (https://github.com/williamfuzitani/testeCadastroContato/blob/master/img/tela-cadastro-02.png)
+![Lista contato] (https://github.com/williamfuzitani/testeCadastroContato/blob/master/img/tela-cadastro-03.png)
+![Lista vários contatos] (https://github.com/williamfuzitani/testeCadastroContato/blob/master/img/tela-cadastro-04.png)
+![Lista após deletar contatos] (https://github.com/williamfuzitani/testeCadastroContato/blob/master/img/tela-cadastro-05.png)
+![Editar contato] (https://github.com/williamfuzitani/testeCadastroContato/blob/master/img/tela-cadastro-06.png)
