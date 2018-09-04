@@ -46,7 +46,7 @@
                 <button type="submit" class="btn btn-success" ng-click="saveUser()" ng-hide="edit">
                     <i class="fas fa-plus"></i> adicionar</button>
                 
-                <button type="submit" class="btn btn-success" ng-click="editUser()" ng-show="edit">
+                <button type="submit" class="btn btn-primary" ng-click="applyChange(pessoa.id)" ng-show="edit">
                     <i class="fas fa-check"></i> salvar</button>
             </form>
 
@@ -76,9 +76,9 @@
                             <td> {{pessoa.dataNascimento}} </td>
                             <td> {{pessoa.telefone}} </td>
                             <td>
-                                <button class="btn btn-warning btn-small" ng-click="editUser()">
+                                <button class="btn btn-warning btn-small" ng-click="editUser(pessoa.id)" ng-model="checkEdit">
                                         <i class="fas fa-pencil-alt"></i> editar</button>
-                                <button class="btn btn-danger btn-small" ng-click="deleteUser(pessoa.id)">
+                                <button class="btn btn-danger btn-small" ng-click="deleteUser(pessoa.id)" ng-model="deleted">
                                         <i class="fas fa-trash-alt"></i> deletar</button>
                             </td>
                         </tr>
